@@ -1,2 +1,2 @@
 qit
-pycrypto
+pycryptodome
