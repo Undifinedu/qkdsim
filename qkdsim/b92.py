@@ -19,7 +19,7 @@ def decodeState(state, basis):
     """
     # Save the original bit Alice sent
     aliceBit = True
-    if util.equivState(state, qit.state('0')):
+    if util.equivState(state, qit.state.State('0')):
         aliceBit = False
 
     # Apply chosen filter
@@ -41,7 +41,7 @@ def simulateEavesdrop(state, basis):
 
 def encodeBit(value):
     """Return the quantum state representing the B92 encoding of the given binary value."""
-    q = qit.state('0')
+    q = qit.state.State('0')
     if value:
         return q.u_propagate(qit.H)
     else:
