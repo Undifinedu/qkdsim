@@ -9,7 +9,7 @@ setup(name='qkdsim',
       packages=find_packages(),
       install_requires=[
           'qit',
-          'pycrypto'
+          'pycryptodome'
           ]
       )
       
